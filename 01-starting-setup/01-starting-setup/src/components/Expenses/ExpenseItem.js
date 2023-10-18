@@ -2,6 +2,7 @@ import React ,{useState} from 'react';
 import Card from "../UI/Card";
 import ExpenseDate from "./ExpenseDate";
 import "./ExpenseItem.css";
+import "./ExpensesList.css"
 
 function ExpenseItem(props) {
 
@@ -10,6 +11,7 @@ function ExpenseItem(props) {
     setTitle("Updated!")
   }
   return (
+    <li className='expenses-list__fallback '>
     <Card className="expense-item">
       <ExpenseDate date={props.date}/>
       <div className="expense-item__description">
@@ -18,6 +20,7 @@ function ExpenseItem(props) {
         <button onClick={clickHandler}>Change Title</button>
       </div>
     </Card>
+    </li>
   );
 }
 
