@@ -25,13 +25,13 @@ const dummy_expenses = [
   {
     id: "e5",
     title: "Bike",
-    amount: 45000,
+    amount: 450,
     date: new Date(2022, 7, 13),
   },
   {
     id: "e5",
     title: "Iphone",
-    amount: 60000,
+    amount: 600,
     date: new Date(2023, 9, 13),
   },
   {
